@@ -7,11 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C69578F1112C0D9260F538C /* libPods-RepoStarsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E720554D182EEB6B20B93 /* libPods-RepoStarsTests.a */; };
 		2FBE3E8E251BDF7000A566FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3E8D251BDF7000A566FB /* AppDelegate.swift */; };
 		2FBE3E92251BDF7000A566FB /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3E91251BDF7000A566FB /* RepositoriesViewController.swift */; };
 		2FBE3E97251BDF7200A566FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FBE3E96251BDF7200A566FB /* Assets.xcassets */; };
 		2FBE3E9A251BDF7200A566FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FBE3E98251BDF7200A566FB /* LaunchScreen.storyboard */; };
+		2FBE3EDE251BEE6000A566FB /* RepoStarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3EDD251BEE6000A566FB /* RepoStarsTests.swift */; };
+		5F908D1194A8324AB5A30549 /* Pods_RepoStars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4533B308ADA5B6423DA2CA7 /* Pods_RepoStars.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FBE3EE0251BEE6000A566FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FBE3E82251BDF7000A566FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBE3E89251BDF7000A566FB;
+			remoteInfo = RepoStars;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2FBE3E8A251BDF7000A566FB /* RepoStars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoStars.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +33,15 @@
 		2FBE3E96251BDF7200A566FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FBE3E99251BDF7200A566FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FBE3E9B251BDF7200A566FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FBE3EDB251BEE6000A566FB /* RepoStarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoStarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FBE3EDD251BEE6000A566FB /* RepoStarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoStarsTests.swift; sourceTree = "<group>"; };
+		2FBE3EDF251BEE6000A566FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43558B3CF3AE4004C1550668 /* Pods-RepoStarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoStarsTests.release.xcconfig"; path = "Target Support Files/Pods-RepoStarsTests/Pods-RepoStarsTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F129399764145D61DCE0BEE /* Pods-RepoStarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoStarsTests.debug.xcconfig"; path = "Target Support Files/Pods-RepoStarsTests/Pods-RepoStarsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		755E720554D182EEB6B20B93 /* libPods-RepoStarsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RepoStarsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4533B308ADA5B6423DA2CA7 /* Pods_RepoStars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoStars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B3016ECC0EA85DE87FE215 /* Pods-RepoStars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoStars.debug.xcconfig"; path = "Target Support Files/Pods-RepoStars/Pods-RepoStars.debug.xcconfig"; sourceTree = "<group>"; };
+		CF9C8B507601ABFB0339C40F /* Pods-RepoStars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoStars.release.xcconfig"; path = "Target Support Files/Pods-RepoStars/Pods-RepoStars.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +49,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F908D1194A8324AB5A30549 /* Pods_RepoStars.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FBE3ED8251BEE6000A566FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C69578F1112C0D9260F538C /* libPods-RepoStarsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,7 +68,10 @@
 			isa = PBXGroup;
 			children = (
 				2FBE3E8C251BDF7000A566FB /* RepoStars */,
+				2FBE3EDC251BEE6000A566FB /* RepoStarsTests */,
 				2FBE3E8B251BDF7000A566FB /* Products */,
+				AF3141C759AAE0C325EDA29E /* Pods */,
+				ECA9C704D0046D217241B0AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				2FBE3E8A251BDF7000A566FB /* RepoStars.app */,
+				2FBE3EDB251BEE6000A566FB /* RepoStarsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +128,35 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		2FBE3EDC251BEE6000A566FB /* RepoStarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FBE3EDD251BEE6000A566FB /* RepoStarsTests.swift */,
+				2FBE3EDF251BEE6000A566FB /* Info.plist */,
+			);
+			path = RepoStarsTests;
+			sourceTree = "<group>";
+		};
+		AF3141C759AAE0C325EDA29E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6B3016ECC0EA85DE87FE215 /* Pods-RepoStars.debug.xcconfig */,
+				CF9C8B507601ABFB0339C40F /* Pods-RepoStars.release.xcconfig */,
+				5F129399764145D61DCE0BEE /* Pods-RepoStarsTests.debug.xcconfig */,
+				43558B3CF3AE4004C1550668 /* Pods-RepoStarsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ECA9C704D0046D217241B0AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4533B308ADA5B6423DA2CA7 /* Pods_RepoStars.framework */,
+				755E720554D182EEB6B20B93 /* libPods-RepoStarsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FBE3E9E251BDF7200A566FB /* Build configuration list for PBXNativeTarget "RepoStars" */;
 			buildPhases = (
+				3701D1CA0A777984ACE27A77 /* [CP] Check Pods Manifest.lock */,
 				2FBE3E86251BDF7000A566FB /* Sources */,
 				2FBE3E87251BDF7000A566FB /* Frameworks */,
 				2FBE3E88251BDF7000A566FB /* Resources */,
@@ -113,6 +178,25 @@
 			productReference = 2FBE3E8A251BDF7000A566FB /* RepoStars.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2FBE3EDA251BEE6000A566FB /* RepoStarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FBE3EE4251BEE6000A566FB /* Build configuration list for PBXNativeTarget "RepoStarsTests" */;
+			buildPhases = (
+				36E44485879C8CB0C002346D /* [CP] Check Pods Manifest.lock */,
+				2FBE3ED7251BEE6000A566FB /* Sources */,
+				2FBE3ED8251BEE6000A566FB /* Frameworks */,
+				2FBE3ED9251BEE6000A566FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FBE3EE1251BEE6000A566FB /* PBXTargetDependency */,
+			);
+			name = RepoStarsTests;
+			productName = RepoStarsTests;
+			productReference = 2FBE3EDB251BEE6000A566FB /* RepoStarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -124,6 +208,10 @@
 				TargetAttributes = {
 					2FBE3E89251BDF7000A566FB = {
 						CreatedOnToolsVersion = 12.0;
+					};
+					2FBE3EDA251BEE6000A566FB = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 2FBE3E89251BDF7000A566FB;
 					};
 				};
 			};
@@ -141,6 +229,7 @@
 			projectRoot = "";
 			targets = (
 				2FBE3E89251BDF7000A566FB /* RepoStars */,
+				2FBE3EDA251BEE6000A566FB /* RepoStarsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -155,7 +244,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FBE3ED9251BEE6000A566FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36E44485879C8CB0C002346D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RepoStarsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3701D1CA0A777984ACE27A77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RepoStars-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2FBE3E86251BDF7000A566FB /* Sources */ = {
@@ -167,7 +310,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FBE3ED7251BEE6000A566FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FBE3EDE251BEE6000A566FB /* RepoStarsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FBE3EE1251BEE6000A566FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBE3E89251BDF7000A566FB /* RepoStars */;
+			targetProxy = 2FBE3EE0251BEE6000A566FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2FBE3E98251BDF7200A566FB /* LaunchScreen.storyboard */ = {
@@ -299,6 +458,7 @@
 		};
 		2FBE3E9F251BDF7200A566FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6B3016ECC0EA85DE87FE215 /* Pods-RepoStars.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +481,7 @@
 		};
 		2FBE3EA0251BDF7200A566FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF9C8B507601ABFB0339C40F /* Pods-RepoStars.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,6 +502,50 @@
 			};
 			name = Release;
 		};
+		2FBE3EE2251BEE6000A566FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F129399764145D61DCE0BEE /* Pods-RepoStarsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQ7ZUC23QT;
+				INFOPLIST_FILE = RepoStarsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amarildolucas.RepoStarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepoStars.app/RepoStars";
+			};
+			name = Debug;
+		};
+		2FBE3EE3251BEE6000A566FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43558B3CF3AE4004C1550668 /* Pods-RepoStarsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQ7ZUC23QT;
+				INFOPLIST_FILE = RepoStarsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amarildolucas.RepoStarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepoStars.app/RepoStars";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -358,6 +563,15 @@
 			buildConfigurations = (
 				2FBE3E9F251BDF7200A566FB /* Debug */,
 				2FBE3EA0251BDF7200A566FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FBE3EE4251BEE6000A566FB /* Build configuration list for PBXNativeTarget "RepoStarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FBE3EE2251BEE6000A566FB /* Debug */,
+				2FBE3EE3251BEE6000A566FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

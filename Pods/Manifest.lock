@@ -1,0 +1,22 @@
+PODS:
+  - KIF (3.7.11):
+    - KIF/Core (= 3.7.11)
+  - KIF/Core (3.7.11)
+  - Nimble (8.1.2)
+
+DEPENDENCIES:
+  - KIF
+  - Nimble
+
+SPEC REPOS:
+  trunk:
+    - KIF
+    - Nimble
+
+SPEC CHECKSUMS:
+  KIF: 927c502455cd746771c57e9b3a5123c67c7fa0b5
+  Nimble: 3864815b4703c7ebffba875973c70e854489fbae
+
+PODFILE CHECKSUM: 04c265d9ac1d533ad3213174aa7c669713d16790
+
+COCOAPODS: 1.9.3

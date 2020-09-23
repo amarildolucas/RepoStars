@@ -1,0 +1,6 @@
+module Pods_RepoStarsTests {
+  umbrella header "Pods-RepoStarsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
