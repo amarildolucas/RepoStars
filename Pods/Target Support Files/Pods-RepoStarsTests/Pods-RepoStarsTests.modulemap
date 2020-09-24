@@ -1,4 +1,4 @@
-module Pods_RepoStarsTests {
+framework module Pods_RepoStarsTests {
   umbrella header "Pods-RepoStarsTests-umbrella.h"
 
   export *

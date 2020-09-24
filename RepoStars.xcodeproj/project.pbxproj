@@ -3,17 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C69578F1112C0D9260F538C /* libPods-RepoStarsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E720554D182EEB6B20B93 /* libPods-RepoStarsTests.a */; };
 		2FBE3E8E251BDF7000A566FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3E8D251BDF7000A566FB /* AppDelegate.swift */; };
 		2FBE3E92251BDF7000A566FB /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3E91251BDF7000A566FB /* RepositoriesViewController.swift */; };
 		2FBE3E97251BDF7200A566FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FBE3E96251BDF7200A566FB /* Assets.xcassets */; };
 		2FBE3E9A251BDF7200A566FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FBE3E98251BDF7200A566FB /* LaunchScreen.storyboard */; };
 		2FBE3EDE251BEE6000A566FB /* RepoStarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3EDD251BEE6000A566FB /* RepoStarsTests.swift */; };
+		2FBE3EF6251BF1FD00A566FB /* RepoStarsAsyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3EF5251BF1FD00A566FB /* RepoStarsAsyncTests.swift */; };
+		2FBE3F0A251BF27A00A566FB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3F09251BF27A00A566FB /* Endpoint.swift */; };
+		2FBE3F13251BF3C800A566FB /* RepositoriesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3F12251BF3C800A566FB /* RepositoriesEndpoint.swift */; };
+		2FBE3F24251BF7B400A566FB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3F23251BF7B400A566FB /* APIClient.swift */; };
+		2FBE3F29251BFB6000A566FB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3F28251BFB6000A566FB /* APIError.swift */; };
+		2FBE3F2E251BFC9E00A566FB /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3F2D251BFC9E00A566FB /* APIClientError.swift */; };
+		2FBE3F41251CD3FB00A566FB /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3F40251CD3FB00A566FB /* Repository.swift */; };
+		2FBE3F49251CDCE300A566FB /* RepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3F48251CDCE300A566FB /* RepositoriesPresenter.swift */; };
+		2FBE3F4E251CE09E00A566FB /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE3F4D251CE09E00A566FB /* Owner.swift */; };
+		2FF81907251CEA0500AE2112 /* RepositoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF81906251CEA0500AE2112 /* RepositoryTableCell.swift */; };
+		2FF8192D251CFBEA00AE2112 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8192C251CFBEA00AE2112 /* Repositories.swift */; };
 		5F908D1194A8324AB5A30549 /* Pods_RepoStars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4533B308ADA5B6423DA2CA7 /* Pods_RepoStars.framework */; };
+		9077E7F965E4D7004C816FE6 /* Pods_RepoStarsAsyncTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144D2674A5D68B74A847BD8A /* Pods_RepoStarsAsyncTests.framework */; };
+		9CA0F244A99A3F405B3C7073 /* Pods_RepoStarsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B3A4C2B8139B05F5AF0669 /* Pods_RepoStarsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +36,18 @@
 			remoteGlobalIDString = 2FBE3E89251BDF7000A566FB;
 			remoteInfo = RepoStars;
 		};
+		2FBE3EF8251BF1FD00A566FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FBE3E82251BDF7000A566FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBE3E89251BDF7000A566FB;
+			remoteInfo = RepoStars;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		027023705F3FA0D4F5A551B4 /* Pods-RepoStarsAsyncTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoStarsAsyncTests.release.xcconfig"; path = "Target Support Files/Pods-RepoStarsAsyncTests/Pods-RepoStarsAsyncTests.release.xcconfig"; sourceTree = "<group>"; };
+		144D2674A5D68B74A847BD8A /* Pods_RepoStarsAsyncTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoStarsAsyncTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBE3E8A251BDF7000A566FB /* RepoStars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoStars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBE3E8D251BDF7000A566FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FBE3E91251BDF7000A566FB /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
@@ -36,9 +57,23 @@
 		2FBE3EDB251BEE6000A566FB /* RepoStarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoStarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBE3EDD251BEE6000A566FB /* RepoStarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoStarsTests.swift; sourceTree = "<group>"; };
 		2FBE3EDF251BEE6000A566FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FBE3EF3251BF1FD00A566FB /* RepoStarsAsyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoStarsAsyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FBE3EF5251BF1FD00A566FB /* RepoStarsAsyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoStarsAsyncTests.swift; sourceTree = "<group>"; };
+		2FBE3EF7251BF1FD00A566FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FBE3F09251BF27A00A566FB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		2FBE3F12251BF3C800A566FB /* RepositoriesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesEndpoint.swift; sourceTree = "<group>"; };
+		2FBE3F23251BF7B400A566FB /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		2FBE3F28251BFB6000A566FB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		2FBE3F2D251BFC9E00A566FB /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
+		2FBE3F40251CD3FB00A566FB /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		2FBE3F48251CDCE300A566FB /* RepositoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPresenter.swift; sourceTree = "<group>"; };
+		2FBE3F4D251CE09E00A566FB /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		2FF81906251CEA0500AE2112 /* RepositoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableCell.swift; sourceTree = "<group>"; };
+		2FF8192C251CFBEA00AE2112 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		34B3A4C2B8139B05F5AF0669 /* Pods_RepoStarsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoStarsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43558B3CF3AE4004C1550668 /* Pods-RepoStarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoStarsTests.release.xcconfig"; path = "Target Support Files/Pods-RepoStarsTests/Pods-RepoStarsTests.release.xcconfig"; sourceTree = "<group>"; };
 		5F129399764145D61DCE0BEE /* Pods-RepoStarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoStarsTests.debug.xcconfig"; path = "Target Support Files/Pods-RepoStarsTests/Pods-RepoStarsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		755E720554D182EEB6B20B93 /* libPods-RepoStarsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RepoStarsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C417C0B875C00ABB5178EF /* Pods-RepoStarsAsyncTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoStarsAsyncTests.debug.xcconfig"; path = "Target Support Files/Pods-RepoStarsAsyncTests/Pods-RepoStarsAsyncTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4533B308ADA5B6423DA2CA7 /* Pods_RepoStars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoStars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B3016ECC0EA85DE87FE215 /* Pods-RepoStars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoStars.debug.xcconfig"; path = "Target Support Files/Pods-RepoStars/Pods-RepoStars.debug.xcconfig"; sourceTree = "<group>"; };
 		CF9C8B507601ABFB0339C40F /* Pods-RepoStars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoStars.release.xcconfig"; path = "Target Support Files/Pods-RepoStars/Pods-RepoStars.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,7 +92,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C69578F1112C0D9260F538C /* libPods-RepoStarsTests.a in Frameworks */,
+				9CA0F244A99A3F405B3C7073 /* Pods_RepoStarsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FBE3EF0251BF1FD00A566FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9077E7F965E4D7004C816FE6 /* Pods_RepoStarsAsyncTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,11 +110,12 @@
 		2FBE3E81251BDF7000A566FB = {
 			isa = PBXGroup;
 			children = (
-				2FBE3E8C251BDF7000A566FB /* RepoStars */,
-				2FBE3EDC251BEE6000A566FB /* RepoStarsTests */,
-				2FBE3E8B251BDF7000A566FB /* Products */,
-				AF3141C759AAE0C325EDA29E /* Pods */,
 				ECA9C704D0046D217241B0AE /* Frameworks */,
+				AF3141C759AAE0C325EDA29E /* Pods */,
+				2FBE3E8B251BDF7000A566FB /* Products */,
+				2FBE3E8C251BDF7000A566FB /* RepoStars */,
+				2FBE3EF4251BF1FD00A566FB /* RepoStarsAsyncTests */,
+				2FBE3EDC251BEE6000A566FB /* RepoStarsTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +124,7 @@
 			children = (
 				2FBE3E8A251BDF7000A566FB /* RepoStars.app */,
 				2FBE3EDB251BEE6000A566FB /* RepoStarsTests.xctest */,
+				2FBE3EF3251BF1FD00A566FB /* RepoStarsAsyncTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,9 +133,11 @@
 			isa = PBXGroup;
 			children = (
 				2FBE3E8D251BDF7000A566FB /* AppDelegate.swift */,
-				2FBE3EA7251BE46B00A566FB /* User Interface */,
+				2FBE3F3F251CD31900A566FB /* Model */,
 				2FBE3EAA251BE4F300A566FB /* Resources */,
+				2FBE3EED251BF12B00A566FB /* Services */,
 				2FBE3EA6251BE42900A566FB /* Supporting Files */,
+				2FBE3EA7251BE46B00A566FB /* User Interface */,
 			);
 			path = RepoStars;
 			sourceTree = "<group>";
@@ -114,7 +161,9 @@
 		2FBE3EA8251BE47F00A566FB /* List Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				2FBE3F48251CDCE300A566FB /* RepositoriesPresenter.swift */,
 				2FBE3E91251BDF7000A566FB /* RepositoriesViewController.swift */,
+				2FF81906251CEA0500AE2112 /* RepositoryTableCell.swift */,
 			);
 			path = "List Repositories";
 			sourceTree = "<group>";
@@ -137,6 +186,53 @@
 			path = RepoStarsTests;
 			sourceTree = "<group>";
 		};
+		2FBE3EED251BF12B00A566FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2FBE3F11251BF38500A566FB /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2FBE3EF4251BF1FD00A566FB /* RepoStarsAsyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FBE3EF5251BF1FD00A566FB /* RepoStarsAsyncTests.swift */,
+				2FBE3EF7251BF1FD00A566FB /* Info.plist */,
+			);
+			path = RepoStarsAsyncTests;
+			sourceTree = "<group>";
+		};
+		2FBE3F08251BF26100A566FB /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				2FBE3F09251BF27A00A566FB /* Endpoint.swift */,
+				2FBE3F12251BF3C800A566FB /* RepositoriesEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		2FBE3F11251BF38500A566FB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2FBE3F08251BF26100A566FB /* Endpoints */,
+				2FBE3F23251BF7B400A566FB /* APIClient.swift */,
+				2FBE3F2D251BFC9E00A566FB /* APIClientError.swift */,
+				2FBE3F28251BFB6000A566FB /* APIError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2FBE3F3F251CD31900A566FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FBE3F4D251CE09E00A566FB /* Owner.swift */,
+				2FF8192C251CFBEA00AE2112 /* Repositories.swift */,
+				2FBE3F40251CD3FB00A566FB /* Repository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AF3141C759AAE0C325EDA29E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +240,8 @@
 				CF9C8B507601ABFB0339C40F /* Pods-RepoStars.release.xcconfig */,
 				5F129399764145D61DCE0BEE /* Pods-RepoStarsTests.debug.xcconfig */,
 				43558B3CF3AE4004C1550668 /* Pods-RepoStarsTests.release.xcconfig */,
+				88C417C0B875C00ABB5178EF /* Pods-RepoStarsAsyncTests.debug.xcconfig */,
+				027023705F3FA0D4F5A551B4 /* Pods-RepoStarsAsyncTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -152,7 +250,8 @@
 			isa = PBXGroup;
 			children = (
 				A4533B308ADA5B6423DA2CA7 /* Pods_RepoStars.framework */,
-				755E720554D182EEB6B20B93 /* libPods-RepoStarsTests.a */,
+				144D2674A5D68B74A847BD8A /* Pods_RepoStarsAsyncTests.framework */,
+				34B3A4C2B8139B05F5AF0669 /* Pods_RepoStarsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,6 +267,7 @@
 				2FBE3E86251BDF7000A566FB /* Sources */,
 				2FBE3E87251BDF7000A566FB /* Frameworks */,
 				2FBE3E88251BDF7000A566FB /* Resources */,
+				17657CF55244BC8B33D9DA14 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,6 +286,7 @@
 				2FBE3ED7251BEE6000A566FB /* Sources */,
 				2FBE3ED8251BEE6000A566FB /* Frameworks */,
 				2FBE3ED9251BEE6000A566FB /* Resources */,
+				0A225FF5BE05B06C26C4367D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +296,26 @@
 			name = RepoStarsTests;
 			productName = RepoStarsTests;
 			productReference = 2FBE3EDB251BEE6000A566FB /* RepoStarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FBE3EF2251BF1FD00A566FB /* RepoStarsAsyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FBE3EFA251BF1FD00A566FB /* Build configuration list for PBXNativeTarget "RepoStarsAsyncTests" */;
+			buildPhases = (
+				46C9B61BD7E8EF69B1914A8F /* [CP] Check Pods Manifest.lock */,
+				2FBE3EEF251BF1FD00A566FB /* Sources */,
+				2FBE3EF0251BF1FD00A566FB /* Frameworks */,
+				2FBE3EF1251BF1FD00A566FB /* Resources */,
+				B429A9E6EE07E94EFA36AC77 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FBE3EF9251BF1FD00A566FB /* PBXTargetDependency */,
+			);
+			name = RepoStarsAsyncTests;
+			productName = RepoStarsAsyncTests;
+			productReference = 2FBE3EF3251BF1FD00A566FB /* RepoStarsAsyncTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -210,6 +331,10 @@
 						CreatedOnToolsVersion = 12.0;
 					};
 					2FBE3EDA251BEE6000A566FB = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 2FBE3E89251BDF7000A566FB;
+					};
+					2FBE3EF2251BF1FD00A566FB = {
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = 2FBE3E89251BDF7000A566FB;
 					};
@@ -230,6 +355,7 @@
 			targets = (
 				2FBE3E89251BDF7000A566FB /* RepoStars */,
 				2FBE3EDA251BEE6000A566FB /* RepoStarsTests */,
+				2FBE3EF2251BF1FD00A566FB /* RepoStarsAsyncTests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,9 +377,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FBE3EF1251BF1FD00A566FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0A225FF5BE05B06C26C4367D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepoStarsTests/Pods-RepoStarsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepoStarsTests/Pods-RepoStarsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepoStarsTests/Pods-RepoStarsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17657CF55244BC8B33D9DA14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepoStars/Pods-RepoStars-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepoStars/Pods-RepoStars-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepoStars/Pods-RepoStars-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		36E44485879C8CB0C002346D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +465,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		46C9B61BD7E8EF69B1914A8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RepoStarsAsyncTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B429A9E6EE07E94EFA36AC77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepoStarsAsyncTests/Pods-RepoStarsAsyncTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepoStarsAsyncTests/Pods-RepoStarsAsyncTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepoStarsAsyncTests/Pods-RepoStarsAsyncTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -305,8 +511,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBE3F0A251BF27A00A566FB /* Endpoint.swift in Sources */,
+				2FBE3F4E251CE09E00A566FB /* Owner.swift in Sources */,
 				2FBE3E92251BDF7000A566FB /* RepositoriesViewController.swift in Sources */,
+				2FF81907251CEA0500AE2112 /* RepositoryTableCell.swift in Sources */,
+				2FBE3F49251CDCE300A566FB /* RepositoriesPresenter.swift in Sources */,
+				2FF8192D251CFBEA00AE2112 /* Repositories.swift in Sources */,
+				2FBE3F13251BF3C800A566FB /* RepositoriesEndpoint.swift in Sources */,
+				2FBE3F24251BF7B400A566FB /* APIClient.swift in Sources */,
 				2FBE3E8E251BDF7000A566FB /* AppDelegate.swift in Sources */,
+				2FBE3F41251CD3FB00A566FB /* Repository.swift in Sources */,
+				2FBE3F29251BFB6000A566FB /* APIError.swift in Sources */,
+				2FBE3F2E251BFC9E00A566FB /* APIClientError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +534,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FBE3EEF251BF1FD00A566FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FBE3EF6251BF1FD00A566FB /* RepoStarsAsyncTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -325,6 +549,11 @@
 			isa = PBXTargetDependency;
 			target = 2FBE3E89251BDF7000A566FB /* RepoStars */;
 			targetProxy = 2FBE3EE0251BEE6000A566FB /* PBXContainerItemProxy */;
+		};
+		2FBE3EF9251BF1FD00A566FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBE3E89251BDF7000A566FB /* RepoStars */;
+			targetProxy = 2FBE3EF8251BF1FD00A566FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -391,7 +620,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -446,7 +675,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -466,7 +695,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GQ7ZUC23QT;
 				INFOPLIST_FILE = "RepoStars/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,7 +718,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GQ7ZUC23QT;
 				INFOPLIST_FILE = "RepoStars/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,6 +775,50 @@
 			};
 			name = Release;
 		};
+		2FBE3EFB251BF1FD00A566FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C417C0B875C00ABB5178EF /* Pods-RepoStarsAsyncTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQ7ZUC23QT;
+				INFOPLIST_FILE = RepoStarsAsyncTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amarildolucas.RepoStarsAsyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepoStars.app/RepoStars";
+			};
+			name = Debug;
+		};
+		2FBE3EFC251BF1FD00A566FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 027023705F3FA0D4F5A551B4 /* Pods-RepoStarsAsyncTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQ7ZUC23QT;
+				INFOPLIST_FILE = RepoStarsAsyncTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amarildolucas.RepoStarsAsyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepoStars.app/RepoStars";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,6 +845,15 @@
 			buildConfigurations = (
 				2FBE3EE2251BEE6000A566FB /* Debug */,
 				2FBE3EE3251BEE6000A566FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FBE3EFA251BF1FD00A566FB /* Build configuration list for PBXNativeTarget "RepoStarsAsyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FBE3EFB251BF1FD00A566FB /* Debug */,
+				2FBE3EFC251BF1FD00A566FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

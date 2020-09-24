@@ -3,20 +3,24 @@ PODS:
     - KIF/Core (= 3.7.11)
   - KIF/Core (3.7.11)
   - Nimble (8.1.2)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - KIF
   - Nimble
+  - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
     - KIF
     - Nimble
+    - SnapKit
 
 SPEC CHECKSUMS:
   KIF: 927c502455cd746771c57e9b3a5123c67c7fa0b5
   Nimble: 3864815b4703c7ebffba875973c70e854489fbae
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 04c265d9ac1d533ad3213174aa7c669713d16790
+PODFILE CHECKSUM: b6ae2d6fbb5a5458266114d0becbf42100baec05
 
 COCOAPODS: 1.9.3

@@ -1,10 +1,14 @@
-platform :ios, '11.0'
+platform :ios, '13.0'
+use_frameworks!
 
 target 'RepoStars' do
-  use_frameworks!
+	pod 'SnapKit', '~> 5.0.0'
 end
 
 target 'RepoStarsTests' do
 	pod 'KIF', :configurations => ['Debug']
+end
+
+target 'RepoStarsAsyncTests' do
 	pod 'Nimble'
 end
