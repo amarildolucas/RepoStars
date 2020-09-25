@@ -40,7 +40,7 @@ struct APIClient<APIEndpoint: Endpoint> {
 
 		let urlRequest = URLRequest(url: url,
 									cachePolicy: .reloadRevalidatingCacheData,
-									timeoutInterval: 30)
+									timeoutInterval: 15)
 
 		return urlRequest
 	}

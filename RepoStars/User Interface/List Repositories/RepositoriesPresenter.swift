@@ -38,11 +38,12 @@ class RepositoriesPresenter {
 
 // MARK: - API Client methods
 extension RepositoriesPresenter {
-	func searchRepositories(query: String, sort: String) {
+	func searchRepositories(query: String, sort: String, page: Int) {
 		delegate?.didStartLoading()
 
 		apiClient.getData(from: .searchRepositories(query: query,
-													sort: sort)) { [weak self] result in
+													sort: sort,
+													page: page)) { [weak self] result in
 			DispatchQueue.main.async {
 				self?.delegate?.didFinishLoading()
 			}

@@ -55,6 +55,7 @@ class RepositoriesViewController: UIViewController {
 	#warning("The fields should be passed on a UI company. But for the challenge purpouse they are passed as contants here.")
 	private let query: String = "language:swift"
 	private let sort: String = "stars"
+	private var page: Int = 1
 
 	let presenter: RepositoriesPresenter
 
@@ -116,11 +117,11 @@ extension RepositoriesViewController {
 		super.viewDidAppear(true)
 
 		presenter.setTitle()
-		presenter.searchRepositories(query: query, sort: sort)
+		refreshRepositories()
 	}
 
 	@objc private func refreshRepositories() {
-		presenter.searchRepositories(query: query, sort: sort)
+		presenter.searchRepositories(query: query, sort: sort, page: page)
 	}
 }
 
@@ -166,3 +167,4 @@ extension RepositoriesViewController: UITableViewDataSource {
 		return cell
 	}
 }
+
