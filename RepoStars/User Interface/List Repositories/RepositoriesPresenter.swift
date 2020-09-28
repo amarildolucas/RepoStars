@@ -19,7 +19,7 @@ protocol RepositoriesPresenterDelegate: class {
 // MARK: - RepositoriesPresenter
 class RepositoriesPresenter {
 	weak var delegate: RepositoriesPresenterDelegate?
-	private let apiClient = APIClient<RepositoriesEndpoint>()
+	let apiClient = APIClient<RepositoriesEndpoint>()
 
 	var repositories: [Repository] = []
 

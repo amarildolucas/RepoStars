@@ -4,6 +4,16 @@
    <FileRef
       location = "group:RepoStars.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:RepoStarsAsyncTests"
+      name = "RepoStarsAsyncTests">
+      <FileRef
+         location = "group:RepoStarsAsyncTests/RepoStarsAsyncTests.swift">
+      </FileRef>
+      <FileRef
+         location = "group:RepoStarsAsyncTests/Info.plist">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
