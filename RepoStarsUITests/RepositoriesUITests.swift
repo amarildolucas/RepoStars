@@ -11,7 +11,7 @@ import KIF
 class RepositoriesUITests: KIFTestCase {
 	func testListRepositories_WithCorrectUI() {
 		tester().waitForView(withAccessibilityLabel: "Activity Indicator")
-		tester().waitForView(withAccessibilityLabel: "Repositories Table")
+		tester().usingTimeout(20).waitForView(withAccessibilityLabel: "Repositories Table")
 		tester().waitForTappableView(withAccessibilityLabel: "Repository Table Cell")
 		tester().waitForView(withAccessibilityLabel: "Avatar Image")
 		tester().waitForView(withAccessibilityLabel: "Owner Name")
@@ -20,14 +20,13 @@ class RepositoriesUITests: KIFTestCase {
 	}
 
 	func testListRepositories_WithPullToRefresh() {
-		tester().pullToRefreshView(withAccessibilityLabel: "Refresh Control",
+		tester().pullToRefreshView(withAccessibilityLabel: "Repositories Table",
 								   pullDownDuration: .inAboutAHalfSecond)
-		tester().waitForView(withAccessibilityLabel: "Repositories Table")
+		tester().usingTimeout(20).waitForView(withAccessibilityLabel: "Repositories Table")
 		tester().waitForTappableView(withAccessibilityLabel: "Repository Table Cell")
 		tester().waitForView(withAccessibilityLabel: "Avatar Image")
 		tester().waitForView(withAccessibilityLabel: "Owner Name")
 		tester().waitForView(withAccessibilityLabel: "Repository Name")
 		tester().waitForView(withAccessibilityLabel: "Stars")
-		tester().accessibilityScroll(.down)
 	}
 }

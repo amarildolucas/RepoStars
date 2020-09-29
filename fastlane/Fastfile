@@ -20,24 +20,27 @@ platform :ios do
   lane :unit_tests do
     run_tests(workspace: 'RepoStars.xcworkspace',
               scheme: 'RepoStars',      
-              only_testing: ['RepoStarsTests'],
-              code_coverage: true)
-              
-    slather(output_directory: "fastlane/slather",
-            html: true,
-            workspace: "RepoStars.xcworkspace",
-            scheme: "RepoStars",
-            proj: "RepoStars.xcodeproj",
-            ignore: ["Pods/*"],
-            verbose: true,
-            show: true)
+              only_testing: ['RepoStarsTests'])
   end
   
   desc "Async Tests"
   lane :async_tests do
     run_tests(workspace: 'RepoStars.xcworkspace',
               scheme: 'RepoStars',      
-              only_testing: ['RepoStarsAsyncTests'],
+              only_testing: ['RepoStarsAsyncTests'])
+  end
+  
+  desc "UI Tests"
+  lane :ui_tests do
+    run_tests(workspace: 'RepoStars.xcworkspace',
+              scheme: 'RepoStars',      
+              only_testing: ['RepoStarsUITests'])
+  end
+  
+  desc "Tests"
+  lane :tests do
+    run_tests(workspace: 'RepoStars.xcworkspace',
+              scheme: 'RepoStars',      
               code_coverage: true)
               
     slather(output_directory: "fastlane/slather",

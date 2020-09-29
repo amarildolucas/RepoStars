@@ -26,6 +26,16 @@ Unit Tests
 fastlane ios async_tests
 ```
 Async Tests
+### ios ui_tests
+```
+fastlane ios ui_tests
+```
+UI Tests
+### ios tests
+```
+fastlane ios tests
+```
+Tests
 
 ----
 
