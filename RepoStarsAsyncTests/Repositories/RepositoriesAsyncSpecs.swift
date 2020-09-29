@@ -11,7 +11,7 @@ import Quick
 @testable import RepoStars
 
 // MARK: - RepoStarsAsyncTests
-class RepoStarsAsyncSpecs: QuickSpec {
+class RepositoriesAsyncSpecs: QuickSpec {
 	override func spec() {
 		var sut: RepositoriesPresenter!
 

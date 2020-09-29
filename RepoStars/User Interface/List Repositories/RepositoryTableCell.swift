@@ -12,6 +12,7 @@ import UIKit
 class RepositoryTableCell: UITableViewCell {
 	lazy var avatarImageView: UIImageView = {
 		let imageView = UIImageView()
+		imageView.accessibilityLabel = "Avatar Image"
 		imageView.image = UIImage(systemName: "person.circle.fill")
 		imageView.contentMode = .scaleAspectFit
 		imageView.clipsToBounds = true
@@ -21,6 +22,7 @@ class RepositoryTableCell: UITableViewCell {
 
 	lazy var ownerNameLabel: UILabel = {
 		let label = UILabel()
+		label.accessibilityLabel = "Owner Name"
 		label.font = UIFont.preferredFont(forTextStyle: .subheadline)
 		label.textColor = .secondaryLabel
 		label.numberOfLines = 1
@@ -30,6 +32,7 @@ class RepositoryTableCell: UITableViewCell {
 
 	lazy var nameLabel: UILabel = {
 		let label = UILabel()
+		label.accessibilityLabel = "Repository Name"
 		label.font = UIFont.preferredFont(forTextStyle: .headline)
 		label.textColor = .label
 		label.numberOfLines = 1
@@ -39,6 +42,7 @@ class RepositoryTableCell: UITableViewCell {
 
 	lazy var starsLabel: UILabel = {
 		let label = UILabel()
+		label.accessibilityLabel = "Stars"
 		label.font = UIFont.preferredFont(forTextStyle: .body)
 		label.textColor = .secondaryLabel
 		label.numberOfLines = 1

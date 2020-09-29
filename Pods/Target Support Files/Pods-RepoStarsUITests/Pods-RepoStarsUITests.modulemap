@@ -1,0 +1,6 @@
+framework module Pods_RepoStarsUITests {
+  umbrella header "Pods-RepoStarsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

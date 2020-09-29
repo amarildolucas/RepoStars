@@ -11,6 +11,7 @@ import UIKit
 class RepositoriesViewController: UIViewController {
 	lazy var tableView: UITableView = {
 		let tableView = UITableView(frame: .zero, style: .plain)
+		tableView.accessibilityLabel = "Repositories Table"
 		tableView.isHidden = true
 		tableView.backgroundColor = .systemBackground
 		tableView.allowsSelection = false
@@ -25,6 +26,7 @@ class RepositoriesViewController: UIViewController {
 
 	lazy var refreshControl: UIRefreshControl = {
 		let control = UIRefreshControl()
+		control.accessibilityLabel = "Refresh Control"
 		control.attributedTitle = NSAttributedString(string: "🔎 pesquisando...")
 		control.addTarget(self, action: #selector(refreshRepositories), for: .valueChanged)
 
@@ -33,6 +35,7 @@ class RepositoriesViewController: UIViewController {
 
 	lazy var activityIndicatorView: UIActivityIndicatorView = {
 		let view = UIActivityIndicatorView()
+		view.accessibilityLabel = "Activity Indicator"
 		view.tintColor = .label
 		view.color = .label
 		view.hidesWhenStopped = true
@@ -43,6 +46,7 @@ class RepositoriesViewController: UIViewController {
 
 	lazy var messageLabel: UILabel = {
 		let label = UILabel()
+		label.accessibilityLabel = "Repositories Message"
 		label.font = UIFont.preferredFont(forTextStyle: .body)
 		label.textColor = .label
 		label.textAlignment = .center
@@ -162,6 +166,7 @@ extension RepositoriesViewController: UITableViewDataSource {
 		let cell = tableView.dequeueReusableCell(
 			withIdentifier: String(describing: RepositoryTableCell.self),
 			for: indexPath) as! RepositoryTableCell
+		cell.accessibilityLabel = "Repository Table Cell"
 		cell.configure(with: repository)
 
 		return cell

@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-RepoStarsUITests/Pods-RepoStarsUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Quick/Quick.framework
+${BUILT_PRODUCTS_DIR}/KIF/KIF.framework
