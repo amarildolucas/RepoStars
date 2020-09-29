@@ -16,6 +16,10 @@
 default_platform(:ios)
 
 platform :ios do
+  before_all do
+    xcode_select('/Applications/Xcode_12.app')
+  end
+
   desc "Unit Tests"
   lane :unit_tests do
     run_tests(workspace: 'RepoStars.xcworkspace',

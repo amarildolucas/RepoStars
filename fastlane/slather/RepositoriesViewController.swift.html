@@ -7,9 +7,9 @@
 <body>
 <header><div class="row"><a href="index.html"><img src="logo.jpg" alt="Slather logo"></a></div></header><div class="row"><div id="reports">
 <h2 class="cov_title">
-<span>Coverage for "RepositoriesViewController.swift" : </span><span class="cov_high">93.39%</span>
+<span>Coverage for "RepositoriesViewController.swift" : </span><span class="cov_high">93.65%</span>
 </h2>
-<h4 class="cov_subtitle">(113 of 121 relevant lines covered)</h4>
+<h4 class="cov_subtitle">(118 of 126 relevant lines covered)</h4>
 <h4 class="cov_filepath">RepoStars/User Interface/List Repositories/RepositoriesViewController.swift</h4>
 <table class="source_code">
 <tr class="never">
@@ -70,357 +70,357 @@
 <tr class="covered">
 <td class="num">12</td>
 <td class="src"><pre><code class="objc">	lazy var tableView: UITableView = {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">13</td>
 <td class="src"><pre><code class="objc">		let tableView = UITableView(frame: .zero, style: .plain)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">14</td>
-<td class="src"><pre><code class="objc">		tableView.isHidden = true</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		tableView.accessibilityLabel = "Repositories Table"</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">15</td>
-<td class="src"><pre><code class="objc">		tableView.backgroundColor = .systemBackground</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		tableView.isHidden = true</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">16</td>
-<td class="src"><pre><code class="objc">		tableView.allowsSelection = false</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		tableView.backgroundColor = .systemBackground</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">17</td>
-<td class="src"><pre><code class="objc">		tableView.dataSource = self</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		tableView.allowsSelection = false</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">18</td>
-<td class="src"><pre><code class="objc">		tableView.rowHeight = 120</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		tableView.dataSource = self</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">19</td>
-<td class="src"><pre><code class="objc">		tableView.addSubview(refreshControl)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		tableView.rowHeight = 120</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">20</td>
-<td class="src"><pre><code class="objc">		tableView.register(RepositoryTableCell.self,</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		tableView.addSubview(refreshControl)</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">21</td>
-<td class="src"><pre><code class="objc">						   forCellReuseIdentifier: String(describing: RepositoryTableCell.self))</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		tableView.register(RepositoryTableCell.self,</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">22</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">						   forCellReuseIdentifier: String(describing: RepositoryTableCell.self))</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">23</td>
-<td class="src"><pre><code class="objc">		return tableView</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">24</td>
-<td class="src"><pre><code class="objc">	}()</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="never">
-<td class="num">25</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">		return tableView</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
+<td class="num">25</td>
+<td class="src"><pre><code class="objc">	}()</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="never">
 <td class="num">26</td>
-<td class="src"><pre><code class="objc">	lazy var refreshControl: UIRefreshControl = {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
 </tr>
 <tr class="covered">
 <td class="num">27</td>
-<td class="src"><pre><code class="objc">		let control = UIRefreshControl()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">	lazy var refreshControl: UIRefreshControl = {</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">28</td>
-<td class="src"><pre><code class="objc">		control.attributedTitle = NSAttributedString(string: "&#128270; pesquisando...")</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		let control = UIRefreshControl()</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">29</td>
-<td class="src"><pre><code class="objc">		control.addTarget(self, action: #selector(refreshRepositories), for: .valueChanged)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		control.accessibilityLabel = "Refresh Control"</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">30</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		control.attributedTitle = NSAttributedString(string: "&#128270; pesquisando...")</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">31</td>
-<td class="src"><pre><code class="objc">		return control</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		control.addTarget(self, action: #selector(refreshRepositories), for: .valueChanged)</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">32</td>
-<td class="src"><pre><code class="objc">	}()</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="never">
-<td class="num">33</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage"></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">33</td>
+<td class="src"><pre><code class="objc">		return control</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">34</td>
-<td class="src"><pre><code class="objc">	lazy var activityIndicatorView: UIActivityIndicatorView = {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">	}()</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
-<tr class="covered">
+<tr class="never">
 <td class="num">35</td>
-<td class="src"><pre><code class="objc">		let view = UIActivityIndicatorView()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
 </tr>
 <tr class="covered">
 <td class="num">36</td>
-<td class="src"><pre><code class="objc">		view.tintColor = .label</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">	lazy var activityIndicatorView: UIActivityIndicatorView = {</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">37</td>
-<td class="src"><pre><code class="objc">		view.color = .label</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		let view = UIActivityIndicatorView()</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">38</td>
-<td class="src"><pre><code class="objc">		view.hidesWhenStopped = true</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		view.accessibilityLabel = "Activity Indicator"</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">39</td>
-<td class="src"><pre><code class="objc">		view.isHidden = true</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		view.tintColor = .label</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">40</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		view.color = .label</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">41</td>
-<td class="src"><pre><code class="objc">		return view</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		view.hidesWhenStopped = true</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">42</td>
-<td class="src"><pre><code class="objc">	}()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		view.isHidden = true</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">43</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage"></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">44</td>
-<td class="src"><pre><code class="objc">	lazy var messageLabel: UILabel = {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		return view</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">45</td>
-<td class="src"><pre><code class="objc">		let label = UILabel()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">	}()</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
-<tr class="covered">
+<tr class="never">
 <td class="num">46</td>
-<td class="src"><pre><code class="objc">		label.font = UIFont.preferredFont(forTextStyle: .body)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
 </tr>
 <tr class="covered">
 <td class="num">47</td>
-<td class="src"><pre><code class="objc">		label.textColor = .label</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">	lazy var messageLabel: UILabel = {</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">48</td>
-<td class="src"><pre><code class="objc">		label.textAlignment = .center</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		let label = UILabel()</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">49</td>
-<td class="src"><pre><code class="objc">		label.numberOfLines = 0</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		label.accessibilityLabel = "Repositories Message"</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">50</td>
-<td class="src"><pre><code class="objc">		label.isHidden = true</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		label.font = UIFont.preferredFont(forTextStyle: .body)</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">51</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		label.textColor = .label</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">52</td>
-<td class="src"><pre><code class="objc">		return label</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		label.textAlignment = .center</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">53</td>
-<td class="src"><pre><code class="objc">	}()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		label.numberOfLines = 0</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">54</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">		label.isHidden = true</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">55</td>
-<td class="src"><pre><code class="objc">	#warning("The fields should be passed on a UI company. But for the challenge purpouse they are passed as contants here.")</code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage">3x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">56</td>
-<td class="src"><pre><code class="objc">	private let query: String = "language:swift"</code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">		return label</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">57</td>
-<td class="src"><pre><code class="objc">	private let sort: String = "stars"</code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">	}()</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="never">
 <td class="num">58</td>
-<td class="src"><pre><code class="objc">	private var page: Int = 1</code></pre></td>
+<td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
 <td class="num">59</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="src"><pre><code class="objc">	#warning("The fields should be passed on a UI company. But for the challenge purpouse they are passed as contants here.")</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
 <td class="num">60</td>
-<td class="src"><pre><code class="objc">	let presenter: RepositoriesPresenter</code></pre></td>
+<td class="src"><pre><code class="objc">	private let query: String = "language:swift"</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
 <td class="num">61</td>
+<td class="src"><pre><code class="objc">	private let sort: String = "stars"</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">62</td>
+<td class="src"><pre><code class="objc">	private var page: Int = 1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">63</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">64</td>
+<td class="src"><pre><code class="objc">	let presenter: RepositoriesPresenter</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">65</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
-<td class="num">62</td>
-<td class="src"><pre><code class="objc">	init(presenter: RepositoriesPresenter) {</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">63</td>
-<td class="src"><pre><code class="objc">		self.presenter = presenter</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">64</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">65</td>
-<td class="src"><pre><code class="objc">		super.init(nibName: nil, bundle: nil)</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
 <td class="num">66</td>
+<td class="src"><pre><code class="objc">	init(presenter: RepositoriesPresenter) {</code></pre></td>
+<td class="coverage">4x</td>
+</tr>
+<tr class="covered">
+<td class="num">67</td>
+<td class="src"><pre><code class="objc">		self.presenter = presenter</code></pre></td>
+<td class="coverage">4x</td>
+</tr>
+<tr class="covered">
+<td class="num">68</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage">4x</td>
+</tr>
+<tr class="covered">
+<td class="num">69</td>
+<td class="src"><pre><code class="objc">		super.init(nibName: nil, bundle: nil)</code></pre></td>
+<td class="coverage">4x</td>
+</tr>
+<tr class="covered">
+<td class="num">70</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">4x</td>
 </tr>
 <tr class="never">
-<td class="num">67</td>
+<td class="num">71</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="missed">
-<td class="num">68</td>
+<td class="num">72</td>
 <td class="src"><pre><code class="objc">	required init?(coder: NSCoder) {</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">69</td>
+<td class="num">73</td>
 <td class="src"><pre><code class="objc">		fatalError("init(coder:) has not been implemented")</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">70</td>
+<td class="num">74</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="never">
-<td class="num">71</td>
+<td class="num">75</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">72</td>
+<td class="num">76</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">73</td>
+<td class="num">77</td>
 <td class="src"><pre><code class="objc">// MARK: - RepositoriesPresenterDelegate</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">74</td>
+<td class="num">78</td>
 <td class="src"><pre><code class="objc">extension RepositoriesViewController: RepositoriesPresenterDelegate {</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
-<td class="num">75</td>
-<td class="src"><pre><code class="objc">	func didStartLoading() {</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">76</td>
-<td class="src"><pre><code class="objc">		activityIndicatorView.isHidden = false</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">77</td>
-<td class="src"><pre><code class="objc">		activityIndicatorView.startAnimating()</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">78</td>
-<td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="never">
 <td class="num">79</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">	func didStartLoading() {</code></pre></td>
+<td class="coverage">4x</td>
 </tr>
 <tr class="covered">
 <td class="num">80</td>
-<td class="src"><pre><code class="objc">	func didSetTitle(_ title: String) {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		activityIndicatorView.isHidden = false</code></pre></td>
+<td class="coverage">4x</td>
 </tr>
 <tr class="covered">
 <td class="num">81</td>
-<td class="src"><pre><code class="objc">		self.title = title</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		activityIndicatorView.startAnimating()</code></pre></td>
+<td class="coverage">4x</td>
 </tr>
 <tr class="covered">
 <td class="num">82</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">4x</td>
 </tr>
 <tr class="never">
 <td class="num">83</td>
@@ -429,436 +429,461 @@
 </tr>
 <tr class="covered">
 <td class="num">84</td>
-<td class="src"><pre><code class="objc">	func repositoriesDidLoad(_ repositories: [Repository]) {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">	func didSetTitle(_ title: String) {</code></pre></td>
+<td class="coverage">4x</td>
 </tr>
 <tr class="covered">
 <td class="num">85</td>
-<td class="src"><pre><code class="objc">		messageLabel.isHidden = true</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		self.title = title</code></pre></td>
+<td class="coverage">4x</td>
 </tr>
 <tr class="covered">
 <td class="num">86</td>
-<td class="src"><pre><code class="objc">		tableView.isHidden = false</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">	}</code></pre></td>
+<td class="coverage">4x</td>
 </tr>
-<tr class="covered">
+<tr class="never">
 <td class="num">87</td>
-<td class="src"><pre><code class="objc">		tableView.reloadData()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
 </tr>
 <tr class="covered">
 <td class="num">88</td>
+<td class="src"><pre><code class="objc">	func repositoriesDidLoad(_ repositories: [Repository]) {</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">89</td>
+<td class="src"><pre><code class="objc">		messageLabel.isHidden = true</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">90</td>
+<td class="src"><pre><code class="objc">		tableView.isHidden = false</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">91</td>
+<td class="src"><pre><code class="objc">		tableView.reloadData()</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">92</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="never">
-<td class="num">89</td>
+<td class="num">93</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="missed">
-<td class="num">90</td>
+<td class="num">94</td>
 <td class="src"><pre><code class="objc">	func repositoriesDidLoad(with messageError: String) {</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">91</td>
+<td class="num">95</td>
 <td class="src"><pre><code class="objc">		tableView.isHidden = true</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">92</td>
+<td class="num">96</td>
 <td class="src"><pre><code class="objc">		messageLabel.isHidden = false</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">93</td>
+<td class="num">97</td>
 <td class="src"><pre><code class="objc">		messageLabel.text = messageError</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">94</td>
+<td class="num">98</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="never">
-<td class="num">95</td>
+<td class="num">99</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
-<td class="num">96</td>
+<td class="num">100</td>
 <td class="src"><pre><code class="objc">	func didFinishLoading() {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
-<td class="num">97</td>
+<td class="num">101</td>
 <td class="src"><pre><code class="objc">		activityIndicatorView.stopAnimating()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
-<td class="num">98</td>
+<td class="num">102</td>
 <td class="src"><pre><code class="objc">		refreshControl.endRefreshing()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
-<td class="num">99</td>
+<td class="num">103</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="never">
-<td class="num">100</td>
+<td class="num">104</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">101</td>
+<td class="num">105</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">102</td>
+<td class="num">106</td>
 <td class="src"><pre><code class="objc">// MARK: - Lifecycle</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">103</td>
+<td class="num">107</td>
 <td class="src"><pre><code class="objc">extension RepositoriesViewController {</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
-<td class="num">104</td>
-<td class="src"><pre><code class="objc">	override func viewDidLoad() {</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">105</td>
-<td class="src"><pre><code class="objc">		super.viewDidLoad()</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">106</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">107</td>
-<td class="src"><pre><code class="objc">		layoutViews()</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
 <td class="num">108</td>
-<td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">	override func viewDidLoad() {</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">109</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">		super.viewDidLoad()</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">110</td>
-<td class="src"><pre><code class="objc">	override func viewWillAppear(_ animated: Bool) {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">111</td>
-<td class="src"><pre><code class="objc">		super.viewWillAppear(true)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		layoutViews()</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">112</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">	}</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
-<tr class="covered">
+<tr class="never">
 <td class="num">113</td>
-<td class="src"><pre><code class="objc">		presenter.delegate = self</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
 </tr>
 <tr class="covered">
 <td class="num">114</td>
-<td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">	override func viewWillAppear(_ animated: Bool) {</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
-<tr class="never">
+<tr class="covered">
 <td class="num">115</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage"></td>
+<td class="src"><pre><code class="objc">		super.viewWillAppear(true)</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">116</td>
-<td class="src"><pre><code class="objc">	override func viewDidAppear(_ animated: Bool) {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">117</td>
-<td class="src"><pre><code class="objc">		super.viewDidAppear(true)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		presenter.delegate = self</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">118</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">119</td>
-<td class="src"><pre><code class="objc">		presenter.setTitle()</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">120</td>
-<td class="src"><pre><code class="objc">		refreshRepositories()</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">121</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="never">
-<td class="num">122</td>
+<td class="num">119</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
+<td class="num">120</td>
+<td class="src"><pre><code class="objc">	override func viewDidAppear(_ animated: Bool) {</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">121</td>
+<td class="src"><pre><code class="objc">		super.viewDidAppear(true)</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">122</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
 <td class="num">123</td>
-<td class="src"><pre><code class="objc">	@objc private func refreshRepositories() {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		presenter.setTitle()</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">124</td>
-<td class="src"><pre><code class="objc">		presenter.searchRepositories(query: query, sort: sort, page: page)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		refreshRepositories()</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">125</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="never">
 <td class="num">126</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">127</td>
+<td class="src"><pre><code class="objc">	@objc private func refreshRepositories() {</code></pre></td>
+<td class="coverage">4x</td>
+</tr>
+<tr class="covered">
+<td class="num">128</td>
+<td class="src"><pre><code class="objc">		presenter.searchRepositories(query: query, sort: sort, page: page)</code></pre></td>
+<td class="coverage">4x</td>
+</tr>
+<tr class="covered">
+<td class="num">129</td>
+<td class="src"><pre><code class="objc">	}</code></pre></td>
+<td class="coverage">4x</td>
+</tr>
+<tr class="never">
+<td class="num">130</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">127</td>
+<td class="num">131</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">128</td>
+<td class="num">132</td>
 <td class="src"><pre><code class="objc">// MARK: - Layout</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">129</td>
+<td class="num">133</td>
 <td class="src"><pre><code class="objc">extension RepositoriesViewController {</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
-<td class="num">130</td>
-<td class="src"><pre><code class="objc">	private func layoutViews() {</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">131</td>
-<td class="src"><pre><code class="objc">		view.backgroundColor = .systemBackground</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">132</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
-<td class="num">133</td>
-<td class="src"><pre><code class="objc">		view.addSubview(tableView)</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
 <td class="num">134</td>
-<td class="src"><pre><code class="objc">		tableView.snp.makeConstraints { make in</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">	private func layoutViews() {</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">135</td>
-<td class="src"><pre><code class="objc">			make.edges.equalToSuperview()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		view.backgroundColor = .systemBackground</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">136</td>
-<td class="src"><pre><code class="objc">		}</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">137</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		view.addSubview(tableView)</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">138</td>
-<td class="src"><pre><code class="objc">		view.insertSubview(activityIndicatorView, aboveSubview: tableView)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		tableView.snp.makeConstraints { make in</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">139</td>
-<td class="src"><pre><code class="objc">		activityIndicatorView.snp.makeConstraints { make in</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">			make.edges.equalToSuperview()</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">140</td>
-<td class="src"><pre><code class="objc">			make.width.height.equalTo(32.0)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		}</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">141</td>
-<td class="src"><pre><code class="objc">			make.centerX.centerY.equalToSuperview()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">142</td>
-<td class="src"><pre><code class="objc">		}</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		view.insertSubview(activityIndicatorView, aboveSubview: tableView)</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">143</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		activityIndicatorView.snp.makeConstraints { make in</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">144</td>
-<td class="src"><pre><code class="objc">		view.addSubview(messageLabel)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">			make.width.height.equalTo(32.0)</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">145</td>
-<td class="src"><pre><code class="objc">		messageLabel.snp.makeConstraints { make in</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">			make.centerX.centerY.equalToSuperview()</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">146</td>
-<td class="src"><pre><code class="objc">			make.leading.equalToSuperview().offset(16.0)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		}</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">147</td>
-<td class="src"><pre><code class="objc">			make.trailing.equalToSuperview().offset(-16.0)</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">148</td>
-<td class="src"><pre><code class="objc">			make.centerY.equalToSuperview()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		view.addSubview(messageLabel)</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">149</td>
-<td class="src"><pre><code class="objc">		}</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">		messageLabel.snp.makeConstraints { make in</code></pre></td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">150</td>
+<td class="src"><pre><code class="objc">			make.leading.equalToSuperview().offset(16.0)</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">151</td>
+<td class="src"><pre><code class="objc">			make.trailing.equalToSuperview().offset(-16.0)</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">152</td>
+<td class="src"><pre><code class="objc">			make.centerY.equalToSuperview()</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">153</td>
+<td class="src"><pre><code class="objc">		}</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">154</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="never">
-<td class="num">151</td>
+<td class="num">155</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">152</td>
+<td class="num">156</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">153</td>
+<td class="num">157</td>
 <td class="src"><pre><code class="objc">// MARK: - UITableViewDataSource</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">154</td>
+<td class="num">158</td>
 <td class="src"><pre><code class="objc">extension RepositoriesViewController: UITableViewDataSource {</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
-<td class="num">155</td>
+<td class="num">159</td>
 <td class="src"><pre><code class="objc">	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {</code></pre></td>
-<td class="coverage">4x</td>
+<td class="coverage">11x</td>
 </tr>
 <tr class="covered">
-<td class="num">156</td>
+<td class="num">160</td>
 <td class="src"><pre><code class="objc">		presenter.numberOfRepositories</code></pre></td>
-<td class="coverage">4x</td>
+<td class="coverage">11x</td>
 </tr>
 <tr class="covered">
-<td class="num">157</td>
+<td class="num">161</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">4x</td>
+<td class="coverage">11x</td>
 </tr>
 <tr class="never">
-<td class="num">158</td>
+<td class="num">162</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
-<td class="num">159</td>
-<td class="src"><pre><code class="objc">	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {</code></pre></td>
-<td class="coverage">14x</td>
-</tr>
-<tr class="covered">
-<td class="num">160</td>
-<td class="src"><pre><code class="objc">		let repository = presenter.repositoryForRow(indexPath.row)</code></pre></td>
-<td class="coverage">14x</td>
-</tr>
-<tr class="covered">
-<td class="num">161</td>
-<td class="src"><pre><code class="objc">		</code></pre></td>
-<td class="coverage">14x</td>
-</tr>
-<tr class="covered">
-<td class="num">162</td>
-<td class="src"><pre><code class="objc">		let cell = tableView.dequeueReusableCell(</code></pre></td>
-<td class="coverage">14x</td>
-</tr>
-<tr class="covered">
 <td class="num">163</td>
-<td class="src"><pre><code class="objc">			withIdentifier: String(describing: RepositoryTableCell.self),</code></pre></td>
-<td class="coverage">14x</td>
+<td class="src"><pre><code class="objc">	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {</code></pre></td>
+<td class="coverage">29x</td>
 </tr>
 <tr class="covered">
 <td class="num">164</td>
-<td class="src"><pre><code class="objc">			for: indexPath) as! RepositoryTableCell</code></pre></td>
-<td class="coverage">14x</td>
+<td class="src"><pre><code class="objc">		let repository = presenter.repositoryForRow(indexPath.row)</code></pre></td>
+<td class="coverage">29x</td>
 </tr>
 <tr class="covered">
 <td class="num">165</td>
-<td class="src"><pre><code class="objc">		cell.configure(with: repository)</code></pre></td>
-<td class="coverage">14x</td>
+<td class="src"><pre><code class="objc">		</code></pre></td>
+<td class="coverage">29x</td>
 </tr>
 <tr class="covered">
 <td class="num">166</td>
-<td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">14x</td>
+<td class="src"><pre><code class="objc">		let cell = tableView.dequeueReusableCell(</code></pre></td>
+<td class="coverage">29x</td>
 </tr>
 <tr class="covered">
 <td class="num">167</td>
-<td class="src"><pre><code class="objc">		return cell</code></pre></td>
-<td class="coverage">14x</td>
+<td class="src"><pre><code class="objc">			withIdentifier: String(describing: RepositoryTableCell.self),</code></pre></td>
+<td class="coverage">29x</td>
 </tr>
 <tr class="covered">
 <td class="num">168</td>
+<td class="src"><pre><code class="objc">			for: indexPath) as! RepositoryTableCell</code></pre></td>
+<td class="coverage">29x</td>
+</tr>
+<tr class="covered">
+<td class="num">169</td>
+<td class="src"><pre><code class="objc">		cell.accessibilityLabel = "Repository Table Cell"</code></pre></td>
+<td class="coverage">29x</td>
+</tr>
+<tr class="covered">
+<td class="num">170</td>
+<td class="src"><pre><code class="objc">		cell.configure(with: repository)</code></pre></td>
+<td class="coverage">29x</td>
+</tr>
+<tr class="covered">
+<td class="num">171</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage">29x</td>
+</tr>
+<tr class="covered">
+<td class="num">172</td>
+<td class="src"><pre><code class="objc">		return cell</code></pre></td>
+<td class="coverage">29x</td>
+</tr>
+<tr class="covered">
+<td class="num">173</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">14x</td>
+<td class="coverage">29x</td>
 </tr>
 <tr class="never">
-<td class="num">169</td>
+<td class="num">174</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">170</td>
+<td class="num">175</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>

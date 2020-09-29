@@ -70,12 +70,12 @@
 <tr class="covered">
 <td class="num">12</td>
 <td class="src"><pre><code class="objc">	func getData(from endpoint: APIEndpoint, completion: @escaping (Result&lt;Data, Error&gt;) -&gt; Void) {</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">13</td>
 <td class="src"><pre><code class="objc">		guard let request = performRequest(for: endpoint) else {</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="missed">
 <td class="num">14</td>
@@ -95,37 +95,37 @@
 <tr class="covered">
 <td class="num">17</td>
 <td class="src"><pre><code class="objc">		}</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">18</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">19</td>
 <td class="src"><pre><code class="objc">		loadData(with: request) { result in</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">20</td>
 <td class="src"><pre><code class="objc">			switch result {</code></pre></td>
-<td class="coverage">2x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">21</td>
 <td class="src"><pre><code class="objc">				case .success(let data):</code></pre></td>
-<td class="coverage">2x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">22</td>
 <td class="src"><pre><code class="objc">					completion(.success(data))</code></pre></td>
-<td class="coverage">2x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">23</td>
 <td class="src"><pre><code class="objc">				case .failure(let error):</code></pre></td>
-<td class="coverage">2x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="missed">
 <td class="num">24</td>
@@ -135,17 +135,17 @@
 <tr class="covered">
 <td class="num">25</td>
 <td class="src"><pre><code class="objc">			}</code></pre></td>
-<td class="coverage">2x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">26</td>
 <td class="src"><pre><code class="objc">		}</code></pre></td>
-<td class="coverage">2x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">27</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="never">
 <td class="num">28</td>
@@ -160,12 +160,12 @@
 <tr class="covered">
 <td class="num">30</td>
 <td class="src"><pre><code class="objc">	private func performRequest(for endpoint: APIEndpoint) -&gt; URLRequest? {</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">31</td>
 <td class="src"><pre><code class="objc">		guard var urlComponents = URLComponents(string: endpoint.absoluteURL) else {</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="missed">
 <td class="num">32</td>
@@ -175,72 +175,72 @@
 <tr class="covered">
 <td class="num">33</td>
 <td class="src"><pre><code class="objc">		}</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">34</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">35</td>
 <td class="src"><pre><code class="objc">		urlComponents.queryItems = endpoint.parameters.compactMap({ parameter -&gt; URLQueryItem in</code></pre></td>
-<td class="coverage">9x</td>
+<td class="coverage">18x</td>
 </tr>
 <tr class="covered">
 <td class="num">36</td>
 <td class="src"><pre><code class="objc">			return URLQueryItem(name: parameter.key, value: parameter.value)</code></pre></td>
-<td class="coverage">9x</td>
+<td class="coverage">18x</td>
 </tr>
 <tr class="covered">
 <td class="num">37</td>
 <td class="src"><pre><code class="objc">		})</code></pre></td>
-<td class="coverage">9x</td>
+<td class="coverage">18x</td>
 </tr>
 <tr class="covered">
 <td class="num">38</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">39</td>
 <td class="src"><pre><code class="objc">		guard let url = urlComponents.url else { return nil }</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">40</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">41</td>
 <td class="src"><pre><code class="objc">		let urlRequest = URLRequest(url: url,</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">42</td>
 <td class="src"><pre><code class="objc">									cachePolicy: .reloadRevalidatingCacheData,</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">43</td>
 <td class="src"><pre><code class="objc">									timeoutInterval: 15)</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">44</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">45</td>
 <td class="src"><pre><code class="objc">		return urlRequest</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">46</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="never">
 <td class="num">47</td>
@@ -255,17 +255,17 @@
 <tr class="covered">
 <td class="num">49</td>
 <td class="src"><pre><code class="objc">	private func loadData(with request: URLRequest, completion: @escaping (Result&lt;Data, Error&gt;) -&gt; Void) {</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">50</td>
 <td class="src"><pre><code class="objc">		let task = URLSession.shared.dataTask(with: request) { data, response, error in</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">51</td>
 <td class="src"><pre><code class="objc">			guard let data = data, error == nil else {</code></pre></td>
-<td class="coverage">2x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="missed">
 <td class="num">52</td>
@@ -320,37 +320,37 @@
 <tr class="covered">
 <td class="num">62</td>
 <td class="src"><pre><code class="objc">			}</code></pre></td>
-<td class="coverage">2x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">63</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">2x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">64</td>
 <td class="src"><pre><code class="objc">			completion(.success(data))</code></pre></td>
-<td class="coverage">2x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">65</td>
 <td class="src"><pre><code class="objc">		}</code></pre></td>
-<td class="coverage">2x</td>
+<td class="coverage">3x</td>
 </tr>
 <tr class="covered">
 <td class="num">66</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">67</td>
 <td class="src"><pre><code class="objc">		task.resume()</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">68</td>
 <td class="src"><pre><code class="objc">	}</code></pre></td>
-<td class="coverage">3x</td>
+<td class="coverage">6x</td>
 </tr>
 <tr class="never">
 <td class="num">69</td>
