@@ -1,8 +1,10 @@
 platform :ios, '13.0'
 use_frameworks!
+inhibit_all_warnings!
 
 def shared_tests
 	pod 'Nimble'
+	pod 'Nimble-Snapshots'
 	pod 'Quick'
 end
 
@@ -11,14 +13,14 @@ target 'RepoStars' do
 end
 
 target 'RepoStarsTests' do
-	inherit! :search_paths
-
 	shared_tests
 end
 
 target 'RepoStarsAsyncTests' do
-	inherit! :search_paths
-	
+	shared_tests
+end
+
+target 'RepoStarsSnapshots' do
 	shared_tests
 end
 

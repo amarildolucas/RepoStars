@@ -1,0 +1,6 @@
+framework module Pods_RepoStarsSnapshots {
+  umbrella header "Pods-RepoStarsSnapshots-umbrella.h"
+
+  export *
+  module * { export * }
+}

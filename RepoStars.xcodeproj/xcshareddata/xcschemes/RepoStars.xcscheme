@@ -70,6 +70,16 @@
                ReferencedContainer = "container:RepoStars.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F4D090325249C6E007EBCB9"
+               BuildableName = "RepoStarsSnapshots.xctest"
+               BlueprintName = "RepoStarsSnapshots"
+               ReferencedContainer = "container:RepoStars.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
