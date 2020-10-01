@@ -68,12 +68,10 @@ class RepositoryTableCell: UITableViewCell {
 		ownerNameLabel.text = nil
 		nameLabel.text = nil
 		starsLabel.text = nil
-		imageView?.image = nil
-
-		super.prepareForReuse()
+		avatarImageView.image = nil
 	}
 
-	func configure(with repository: Repository) {
+	func configure(with repository: Repository, at row: Int) {
 		ownerNameLabel.text = repository.owner.login
 		nameLabel.text = repository.name
 		starsLabel.text = "⭐️ \(repository.stargazersCount)"
@@ -83,7 +81,9 @@ class RepositoryTableCell: UITableViewCell {
 		DispatchQueue.global().async {
 			if let url = url, let data = try? Data(contentsOf: url) {
 				DispatchQueue.main.async {
-					self.avatarImageView.image = UIImage(data: data)
+					if self.tag == row {
+						self.avatarImageView.image = UIImage(data: data)
+					}
 				}
 			}
 		}

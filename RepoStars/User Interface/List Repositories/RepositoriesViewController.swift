@@ -16,6 +16,7 @@ class RepositoriesViewController: UIViewController {
 		tableView.backgroundColor = .systemBackground
 		tableView.allowsSelection = false
 		tableView.dataSource = self
+		tableView.delegate = self
 		tableView.rowHeight = 120
 		tableView.addSubview(refreshControl)
 		tableView.register(RepositoryTableCell.self,
@@ -61,6 +62,9 @@ class RepositoriesViewController: UIViewController {
 	private let sort: String = "stars"
 	private var page: Int = 1
 
+	private var loadsMoreData: Bool = false
+	private var isLoading: Bool = false
+
 	let presenter: RepositoriesPresenter
 
 	init(presenter: RepositoriesPresenter) {
@@ -86,6 +90,9 @@ extension RepositoriesViewController: RepositoriesPresenterDelegate {
 	}
 
 	func repositoriesDidLoad(_ repositories: [Repository]) {
+		isLoading = false
+		loadsMoreData = true
+
 		messageLabel.isHidden = true
 		tableView.isHidden = false
 		tableView.reloadData()
@@ -125,13 +132,40 @@ extension RepositoriesViewController {
 	}
 
 	@objc private func refreshRepositories() {
+		presenter.removeAllRepositories()
+
+		tableView.reloadData()
+		tableView.isHidden = true
+
+		page = 1
 		presenter.searchRepositories(query: query, sort: sort, page: page)
+		page += 1
+	}
+
+	private func loadMoreData(at row: Int) {
+		if !isLoading && loadsMoreData && row == presenter.lastRowIndex {
+			DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+				guard !self.presenter.isLastRepository else { return }
+
+				self.presenter.searchRepositories(query: self.query,
+												  sort: self.sort,
+												  page: self.page)
+				self.page += 1
+				self.isLoading = true
+			}
+		}
 	}
 }
 
 // MARK: - Layout
 extension RepositoriesViewController {
 	private func layoutViews() {
+		let reloadBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "gobackward"),
+												  style: .plain,
+												  target: self,
+												  action: #selector(refreshRepositories))
+		navigationItem.rightBarButtonItem = reloadBarButtonItem
+
 		view.backgroundColor = .systemBackground
 
 		view.addSubview(tableView)
@@ -162,14 +196,22 @@ extension RepositoriesViewController: UITableViewDataSource {
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let repository = presenter.repositoryForRow(indexPath.row)
-		
+
 		let cell = tableView.dequeueReusableCell(
 			withIdentifier: String(describing: RepositoryTableCell.self),
 			for: indexPath) as! RepositoryTableCell
 		cell.accessibilityLabel = "Repository Table Cell"
-		cell.configure(with: repository)
+		cell.tag = indexPath.row
+		cell.configure(with: repository, at: indexPath.row)
 
 		return cell
+	}
+}
+
+// MARK: - UITableViewDelegate
+extension RepositoriesViewController: UITableViewDelegate {
+	func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+		loadMoreData(at: indexPath.row)
 	}
 }
 

@@ -14,7 +14,7 @@ import Quick
 // MARK: - RepoStarsSnapshotsTests
 class RepoStarsSnapshotsTests: QuickSpec {
 	override func spec() {
-		describe("A 'RepositoriesViewController'") {
+		describe("The 'RepositoriesViewController'") {
 			var sut: RepositoriesViewController!
 
 			context("Record Snapshots") {
@@ -30,7 +30,7 @@ class RepoStarsSnapshotsTests: QuickSpec {
 													 sort: "stars",
 													 page: 1)
 
-					// expect(view).toEventually(recordSnapshot(), timeout: 30)
+//					expect(view).toEventually(recordSnapshot(), timeout: 40)
 					expect(view).to(haveValidSnapshot())
 				}
 

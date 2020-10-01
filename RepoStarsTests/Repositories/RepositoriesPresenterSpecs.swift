@@ -41,6 +41,20 @@ class RepositoriesPresenterSpecs: QuickSpec {
 					expect(repositoryInRow.owner.login).to(contain(repository.owner.login))
 					expect(repositoryInRow.owner.avatarUrl).to(contain(repository.owner.avatarUrl))
 				}
+
+				it("Is last repository") {
+					sut.totalCount = 30
+					expect(sut.isLastRepository).to(beTrue())
+				}
+
+				it("Is last row index") {
+					expect(sut.lastRowIndex).to(equal(29))
+				}
+
+				it("Should remove all repositories") {
+					sut.removeAllRepositories()
+					expect(sut.repositories).to(beEmpty())
+				}
 			}
 
 			context("When given RepositoriesViewController") {

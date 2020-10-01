@@ -22,13 +22,26 @@ class RepositoriesPresenter {
 	let apiClient = APIClient<RepositoriesEndpoint>()
 
 	var repositories: [Repository] = []
+	var totalCount: Int = 0
 
 	var numberOfRepositories: Int {
 		return repositories.count
 	}
 
+	var isLastRepository: Bool {
+		return repositories.count == totalCount
+	}
+
+	var lastRowIndex: Int {
+		return repositories.count - 1
+	}
+
 	func repositoryForRow(_ row: Int) -> Repository {
 		return repositories[row]
+	}
+
+	func removeAllRepositories() {
+		repositories.removeAll()
 	}
 
 	func setTitle() {
@@ -54,10 +67,12 @@ extension RepositoriesPresenter {
 
 					do {
 						let repositories = try decoder.decode(Repositories.self, from: data)
+						let items = repositories.items
+
+						self?.totalCount = repositories.totalCount
+						self?.repositories.append(contentsOf: items)
 
 						DispatchQueue.main.async {
-							let items = repositories.items
-							self?.repositories = items
 							self?.delegate?.repositoriesDidLoad(items)
 						}
 					} catch {

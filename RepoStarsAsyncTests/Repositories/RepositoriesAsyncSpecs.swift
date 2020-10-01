@@ -19,18 +19,14 @@ class RepositoriesAsyncSpecs: QuickSpec {
 			context("When given a 'query', 'sort' and 'page' parameters") {
 				beforeEach {
 					sut = RepositoriesPresenter()
-				}
 
-				it("'GET' request from API") {
-					waitUntil { done in
+					it("'GET' request from API") {
 						sut.searchRepositories(query: "language:swift",
 											   sort: "stars",
 											   page: 1)
 
-//						expect(sut.numberOfRepositories).to(beGreaterThan(0))
-//						expect(sut.repositoryForRow(0)).notTo(beNil())
-
-						done()
+						expect(sut.numberOfRepositories).toEventually(beGreaterThan(0))
+						expect(sut.repositoryForRow(0)).toEventuallyNot(beNil())
 					}
 				}
 
